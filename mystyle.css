@@ -1,0 +1,164 @@
+/*  File: mystyle.css
+	Author: James Rich
+	Date: November 2021
+	Class: CIS 133DA section 22014 
+	With extensive help from W3. 
+	All images from Pexel, free to 
+	use with no attribution required.
+	All fonts from Google Fonts. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Encode+Sans+SC&family=Quattrocento+Sans&display=swap'); /* In order: title, heading, text. */ 
+	
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #a49ec5; /* Background color */
+	color: #0a0428;
+	font-family: "Quattrocento Sans", sans-serif;
+	font-size: 16pt;
+	margin-left: 50px; 
+	}
+	
+.header {
+	padding: 30px;
+	text-align: left;
+	background: #9288CA;
+} 
+	
+.header h1 {
+	font-size: 36pt;
+}
+
+.header img {
+	padding: 10px;
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+/* Style the top navigation bar */
+.topnav {
+	background-color: #0C0728;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+}
+
+.topnav li {
+	display: inline-block;
+	font-size: 16pt; 
+	padding: 20px;
+}	
+
+a {
+	color: #A49EC5;
+}
+
+a:visited {
+	color: #9288CA;
+	text-decoration: underline;
+}
+
+.active {
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+/* Create three unequal columns that float next to each other */
+
+/* Left column - images */
+.leftcolumn {   
+	float: left;
+	width: 20%;
+}
+
+.leftcolumn img {
+	float: left;
+}
+
+.responsive { /* This makes the image match the width of the column. */
+  width: 100%;
+  height: auto;
+}
+
+/* Center column - main content */
+.centercolumn {
+	float: left;
+	width: 60%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+/* Right column - events */
+.rightcolumn {
+	float: left;
+	width: 20%;
+	padding-left: 20px;
+}
+
+.rightcolumn h2 {
+	font-size: 20pt;
+}
+	
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+	
+table, th, td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+	}
+	
+.footer h2 {
+		font-size: 12pt;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .centercolumn, .rightcolumn {   
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+/* Responsive layout - when the screen is less than 400px wide, make the 
+navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+		
+h1 { /* Title */
+	color: #0a0428; /* Font color */
+	font-family: "Cinzel Decorative", cursive;
+	font-size: 36pt;
+	margin-left: 100px;
+}
+	
+h2 { /* For section headings. */
+	color: #0c0728; /* Accent color #2. */
+	font-family: "Encode Sans SC", sans-serif;
+	margin-left: 75px;
+}
