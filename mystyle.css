@@ -1,6 +1,6 @@
 /*  File: mystyle.css
 	Author: James Rich
-	Date: November 2021
+	Date: December 2021
 	Class: CIS 133DA section 22014 
 	With extensive help from W3. 
 	All images from Pexel, free to 
@@ -24,7 +24,7 @@ body {
 .header {
 	padding: 30px;
 	text-align: left;
-	background: #9288CA;
+	background: #9288CA; /* Accent color 3. */
 } 
 	
 .header h1 {
@@ -38,9 +38,9 @@ body {
 	height: auto;
 }
 
-/* Style the top navigation bar */
+/* Top navigation bar */
 .topnav {
-	background-color: #0C0728;
+	background-color: #0C0728; /* Accent color 2. */
 	list-style-type: none;
 	text-align: center;
 	margin: 0;
@@ -54,16 +54,16 @@ body {
 	padding: 20px;
 }	
 
-a {
-	color: #A49EC5;
+a { /* General link appearance. */
+	color: #A49EC5; /* This is the background color again. */
 }
 
-a:visited {
-	color: #9288CA;
+a:visited { /* Visited link appearance. */
+	color: #9288CA; /* Accent color 3. */
 	text-decoration: underline;
 }
 
-.active {
+.active { /* Keeps tabs on which page you're on. */
 	background-color: #ffffff;
 	padding: 20px;
 }
@@ -111,6 +111,8 @@ a:visited {
 	clear: both;
 	}
 	
+
+/* Styling for the menu tables. */
 table, th, td {
 	border: 1px solid black;
 	padding: 10px;
@@ -118,6 +120,52 @@ table, th, td {
 
 table {
 	width: 100%;
+}
+
+/* Styling for the Events page date icons - c/o sitepoint.com */
+time.icon {
+	font-size: 1em; /* change icon size */
+	display: block;
+	position: relative;
+	width: 7em;
+	height: 7em;
+	background-color: #fff;
+	border-radius: 0.6em;
+	box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+	overflow: hidden;
+	float: left;
+}
+
+time.icon * {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+}
+
+time.icon strong {
+	position: absolute;
+	top: 0;
+	padding: 0.4em 0;
+	color: #fff;
+	background-color: #9288CA;
+	border-bottom: 1px dashed #f37302;
+	box-shadow: 0 2px 0 #9288CA;
+}
+
+time.icon em {
+	position: absolute;
+	bottom: 0.3em;
+	color: #9288CA;
+}
+
+time.icon span {
+	font-size: 2.8em;
+	letter-spacing: -0.05em;
+	padding-top: 0.8em;
+	color: #2f2f2f;
 }
 
 /* Footer */

@@ -3,7 +3,7 @@
 <head>
 <!-- File: index.html
 	 Author: James Rich 
-	 Date: November 2021
+	 Date: December 2021
 	 Class: CIS 133DA section 22014 
 	 -->
 	<title>Craven's Manor</title>
@@ -33,16 +33,23 @@
 <div class="row">
 
 	<div class="leftcolumn">
-		<img src="img/pexels-rodnae-productions-7821929(3).jpg" alt="Man and woman sitting on black leather couch while reading a book." class="responsive">
+		<img src="img/pexels-ron-lach-8429817(3).jpg" alt="Man sitting at the table in cafe and reading book." class="responsive">
 	</div>
 	
 	<div class="centercolumn"> <!-- About Us goes here. -->
-		<p>Craven's Manor is a Mesa, Arizona combination bookstore and café. Founded in 2021 by James Rich & associates....</p><br/>
+		<p>Craven's Manor is a Mesa, Arizona combination bookstore and café. Founded in 2021 by James Rich & associates as a safe space for everyone 
+		to read, discuss books, and get a nice snack. Operated with a healthy sense of humor and a little bit of pretension, Craven's Manor is the 
+		ideal place for a bookworm to get out from under the hot sun and into a world of reading and enjoyment! Events range from author talks to 
+		writing and publishing workshops to informational seminars regarding intersectionality and social justice.</p><br/>
 		
-		<video width="640" height="420" controls>
-			<source src="vid/Pexels-Videos-1847910.mp4">
-			<i>Your browser does not support the video tag.</i>
-		</video>
+		<img src="img/pexels-daria-obymaha-1684151.jpg" usemap="#imagemap" alt="Warm coffee drink.">
+		<map name="imagemap">
+			<area shape="poly" coords="359,486,376,480,414,476,460,477,489,483,496,491,497,503,478,669,478,685,461,696,429,696,397,692,376,677" alt="Menu" title="Contact" href="menu.html">
+			<area shape="poly" coords="337,708,438,728,319,822,204,791" alt="Contact" title="Contact" href="contact.html">
+			<area shape="poly" coords="141,656,298,687,158,788,0,749" alt="Events" title="Events" href="events.html">
+			<area shape="poly" coords="109,635,241,566,367,584,254,658" alt="Home" title="Home" href="index.html">
+		</map>
+		<!-- Above is my image map. I attempted to make it responsive using https://github.com/davidjbradshaw/image-map-resizer but was unable to make it work. This is the only non-responsive part of the site. -->
 	</div>
 	
 	<div class="rightcolumn">
@@ -53,6 +60,11 @@
 			<li>21 December, 2021: Yule Ball</li>
 			<li>31 December, 2021: New Year, New Books</li>
 		</ul>
+		<hr>
+		<h2>Newsletter</h2>
+		<p>Sign up for our weekly newsletter to hear about upcoming events!</p>
+		<label for="email">Email Address:</label><br>
+		<input type="text" id="email" name="email"><br>
     </div>
 
 </div>
