@@ -30,7 +30,7 @@
 
 <div class="row">
 
-	<div class="leftcolumn">
+	<div class="leftcolumn"> <!-- Images of cafe food, hopefully lending a good impression of the food served here... -->
 		<img src="img/pexels-emre-can-acer-2079439(2).jpg" alt="Black kettle on brown and black wooden coffee table." class="responsive">
 		<img src="img/pexels-tim-douglas-6205624(3).jpg" alt="Delicious latte on table with cookie and blooming Chrysanthemums indoors." class="responsive">
 		<img src="img/pexels-pixabay-533183(2).jpg" alt="Coffee latte beside book and cake." class="responsive">
@@ -41,9 +41,9 @@
 	</div>
 	
 	<div class="centercolumn">
-	
+	<!-- The actual menu itself. -->
 		<h2>Appetizers & Sides</h2>
-		<div style="overflow-x:auto;">
+		<div style="overflow-x:auto;"> <!-- This makes the table responsive, so it doesn't run off the column. -->
 		<table>
 			<tr>
 				<th>Item</th>
@@ -89,7 +89,7 @@
 		</div>
 		
 		<h2>Food</h2>
-		<div style="overflow-x:auto;">
+		<div style="overflow-x:auto;"> <!-- This makes the table responsive, so it doesn't run off the column. -->
 		<table>
 			<tr>
 				<th>Item</th>
@@ -175,7 +175,7 @@
 		</div>
 		
 		<h2>Dessert</h2>
-		<div style="overflow-x:auto;">
+		<div style="overflow-x:auto;"> <!-- This makes the table responsive, so it doesn't run off the column. -->
 		<table>
 				<tr>
 				<th>Item</th>
@@ -221,7 +221,7 @@
 		</div>
 		
 		<h2>Drinks</h2>
-		<div style="overflow-x:auto;">
+		<div style="overflow-x:auto;"> <!-- This makes the table responsive, so it doesn't run off the column. -->
 		<table>
 			<tr>
 				<th>Item</th>
@@ -263,15 +263,20 @@
 		<!-- Events -->
 		<h2>Upcoming Events</h2>
 		<ul>
+			<li>13 November, 2021: Adaptive Hula-Hooping (with Ben Berry)</li>
 			<li>29 November, 2021: Thanksgiving?</li>
 			<li>21 December, 2021: Yule Ball</li>
 			<li>31 December, 2021: New Year, New Books</li>
 		</ul>
 		<hr>
+		<!-- Quick form to sign up for newsletter. -->
 		<h2>Newsletter</h2>
 		<p>Sign up for our weekly newsletter to hear about upcoming events!</p>
-		<label for="email">Email Address:</label><br>
-		<input type="text" id="email" name="email"><br>
+		<form>
+			<label for="email">Email Address:</label><br>
+			<input type="text" id="email" name="email"><br>
+			<input type="submit" value="Sign Up"><br>
+		</form>
 	</div>
 </div>
 
